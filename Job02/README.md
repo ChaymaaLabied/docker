@@ -11,3 +11,12 @@ docker run -it --rm -p 3000:3000 mon-welcome-app
 docker images  
 docker ps  
 docker ps -a
+
+## Étape 4 : Modification du code
+
+Ouvrir le dossier `src/` dans VS Code.  
+Modifier un texte visible dans l'application, par exemple dans `App.js` :
+
+```js
+<h1>Salut C'est Chmicha!</h1>
+```
