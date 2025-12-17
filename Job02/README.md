@@ -5,3 +5,9 @@ docker build -t mon-welcome-app .
 ## Étape 2 :le Lancement du container
 
 docker run -it --rm -p 3000:3000 mon-welcome-app
+
+## Étape 3 : Vérifications Docker
+
+docker images  
+docker ps  
+docker ps -a
