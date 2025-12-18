@@ -38,3 +38,9 @@ docker build -t mon-welcome-app:v2 .
 1. Connexion à Docker Hub : docker login
 2. Taguer l’image : docker tag mon-welcome-app:v2 chmicha01/mon-welcome-app:v2
 3. Pousser l’image sur Docker Hub : docker push chmicha01/mon-welcome-app:v2
+
+## Étape 7 : Utilisation de l’image Docker d’un collègue
+
+1. Récupérer l’image depuis Docker Hub : docker pull cosminbilga/welcome-to-docker:latest
+2. Vérifier que l’image est téléchargée : docker images
+3. Lancer le container depuis l’image du collègue : docker run -it --rm -p 3000:3000 cosminbilga/welcome-to-docker:latest
