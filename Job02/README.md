@@ -32,3 +32,9 @@ Rebuild de l'image :
 ```bash
 docker build -t mon-welcome-app:v2 .
 ```
+
+## Étape 6 : Publication de l’image sur Docker Hub
+
+1. Connexion à Docker Hub : docker login
+2. Taguer l’image : docker tag mon-welcome-app:v2 chmicha01/mon-welcome-app:v2
+3. Pousser l’image sur Docker Hub : docker push chmicha01/mon-welcome-app:v2
