@@ -43,3 +43,41 @@ Les images et conteneurs sont accessibles dans les onglets **Images** et **Conta
 
 ![Deux conteneurs Super Mario](images/deux_conteneurs_port_8601.png)
 ![Deux conteneurs Super Mario](images/deux_conteneurs%20sur%20desktop.png)
+
+### Étape 5 — Arrêter un conteneur
+
+#### Option 1 — Terminal
+
+![Conteneur arrêté](images/commande%20pour%20arreté%20le%20contenaire%208601.png)
+![Conteneur arrêté](images/cot%20nav%20port%208601%20arreté.png)
+![Conteneur arrêté](images/le%20contenaire%20deja%20arrete%20avec%20le%20code%20a%20disparu.png)
+
+#### Option 2 — Docker Desktop
+
+![Conteneur arrêté](images/arreté%20via%20docker%20desktop%20port%208600.png)
+![Conteneur arrêté](images/coté%20navigateur%20port%208600%20arreté.png)
+
+### Étape 6 — Supprimer un conteneur
+
+#### Option 1 — Terminal
+
+![Conteneur supprimé](images/container%20supprimé%20via%20le%20terminal.png)
+![Conteneur supprimé](images/terminal%20suppression%20contenaire.png)
+
+#### Option 2 — Docker Desktop
+
+![Conteneur supprimé](images/supp%20via%20desktop%201.png)
+![Conteneur supprimé](images/supp%20via%20desktop%202.png)
+![Conteneur supprimé](images/supp%20via%20desktop%203.png)
+
+### Étape 7 — Supprimer l’image Docker
+
+#### Option 1 — Terminal
+
+![Image supprimée](images/supp%20via%20desktop%201.png)
+
+#### Option 2 — Docker Desktop
+
+![Image supprimée](images/il%20est%20partie%20l'image%20hh.png)
+![Image supprimée](images/supprimer%20via%20le%20desktop.png)
+![Image supprimée](images/il%20est%20partie%20l'image%20hh.png)
