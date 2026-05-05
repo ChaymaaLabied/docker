@@ -41,7 +41,7 @@ Affichage des conteneurs actifs pour vérifier que le serveur tourne correctemen
 Accès à la page PHP via l’URL :
 
 ```
-http://localhost:8080
+http://localhost:8081
 ```
 
 Affichage des informations du serveur grâce à `phpinfo()`.
