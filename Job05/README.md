@@ -94,3 +94,23 @@ Accès au jeu Tic Tac Toe via :
 ```text
 http://localhost:8080
 ```
+
+![jeu](images/jeu.png)
+
+### Étape 6 — Vérification du volume Docker
+
+Affichage du contenu du volume Docker pour vérifier la persistance des données même après arrêt du conteneur.
+![terminal](images/data-terminal)
+
+### Étape 7 — Vérification dans Docker Desktop
+
+Consultation du conteneur et du volume directement depuis Docker Desktop.
+
+consultation du volume game-results et lecture du fichier results.json
+![results.json](images/results-dockerDescktop)
+
+### Étape 9 — Arrêt du conteneur
+
+Arrêt du conteneur Docker après les tests.
+
+![arret](images/arret-cont)
