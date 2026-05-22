@@ -48,7 +48,7 @@ Configuration du serveur Nginx pour servir le frontend et communiquer avec le ba
 
 ---
 
-# 🐳 Partie 2 — Lancement des conteneurs Docker
+# Partie 2 — Lancement des conteneurs Docker
 
 ### Étape 1 — Build et lancement des services
 
@@ -77,7 +77,7 @@ docker ps
 Accès à l’application frontend via :
 
 ```text
-http://localhost:8080
+http://localhost:8082
 ```
 
 Affichage du statut de l’API.
@@ -98,21 +98,7 @@ http://localhost:3000
 
 ---
 
-### Étape 5 — Vérification de l’API
-
-Accès à la route API :
-
-```text
-http://localhost:3000/api/status
-```
-
-Affichage du statut de la base de données et de l’heure actuelle.
-
-![API status](images/api-status.png)
-
----
-
-### Étape 6 — Accès à Adminer
+### Étape 5 — Accès à Adminer
 
 Connexion à Adminer via :
 
@@ -133,7 +119,7 @@ Base de données : projetdb
 
 ---
 
-### Étape 7 — Vérification de la base de données
+### Étape 6 — Vérification de la base de données
 
 Connexion réussie à la base de données MySQL depuis Adminer.
 
@@ -141,7 +127,7 @@ Connexion réussie à la base de données MySQL depuis Adminer.
 
 ---
 
-### Étape 8 — Connexion au conteneur MySQL
+### Étape 7 — Connexion au conteneur MySQL
 
 Connexion au shell MySQL depuis le terminal Docker.
 
@@ -153,19 +139,7 @@ docker exec -it database mysql -u root -p
 
 ---
 
-### Étape 9 — Affichage des bases de données
-
-Affichage des bases de données disponibles.
-
-```sql
-SHOW DATABASES;
-```
-
-![Show databases](images/show-databases.png)
-
----
-
-### Étape 10 — Vérification du réseau Docker
+### Étape 8 — Vérification du réseau Docker
 
 Affichage des réseaux Docker créés automatiquement par Docker Compose.
 
@@ -177,7 +151,7 @@ docker network ls
 
 ---
 
-### Étape 11 — Arrêt des conteneurs
+### Étape 9 — Arrêt des conteneurs
 
 Arrêt des services Docker Compose.
 

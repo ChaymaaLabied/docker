@@ -1,4 +1,4 @@
-version: "3.8"
+# version: "3.8"
 
 services:
 
@@ -11,6 +11,13 @@ services:
       MYSQL_DATABASE: projetdb
     ports:
       - "3306:3306"
+    networks:
+      - reseau-bridge
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
 
   backend:
     build: ./backend
@@ -18,16 +25,26 @@ services:
     restart: always
     ports:
       - "3000:3000"
+    environment:
+      DB_HOST: database
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: projetdb
     depends_on:
-      - database
+      database:
+        condition: service_healthy
+    networks:
+      - reseau-bridge
 
   nginx:
     image: nginx:alpine
     container_name: frontend
     ports:
-      - "8080:80"
+      - "8082:80"
     depends_on:
       - backend
+    networks:
+      - reseau-bridge
 
   adminer:
     image: adminer
@@ -35,3 +52,8 @@ services:
     restart: always
     ports:
       - "8081:8080"
+    networks:
+      - reseau-bridge
+
+networks:
+  reseau-bridge:
